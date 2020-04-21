@@ -1,0 +1,252 @@
+<!doctype html> <!-- doctype mostra que isso é um arquivo HTML5 -->
+<html lang="pt-br"> <!-- define a linguagem do site m Portugues Brasil-->
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="Description" content="Site kiBeleza"> <!-- Qunado passar o mouse no cabeçalho do site, no brownser irá aparecer esse nome, e no google aparece como descrição, até 128 caracteres-->
+	<meta name="Keywords" content="Beleza, Cortes">    <!-- O que tem o site, ajuda no sistema de busca, até 8/10 esta bom -->
+	<title>.: KiBeleza:.</title> <!-- Nome que aparece no cabeçalho do site -->
+	
+	
+	<!-- para o vanegador identificar qual alargura da tela, para o responsivo, o 1.0 é onde se inicia , que seria o 100%-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<!-- ANIMETED css do animated, deve ficar a cima do noss css-->	
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- stick-->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	
+	
+	<link rel="stylesheet" href="css/resete.css">
+	
+	<!--importar o arquivo css principal, sempre será o ultimo-->
+	<link  rel="stylesheet" href="css/estilo.css">
+		  
+	<!--rel diz que estamos importando um arquivo em cascata.
+			o href é o local que está o arqivo-->
+	
+
+</head>
+
+<body> 
+	<header> <!-- inicio topo-->
+		<!-- é o inicio do corpo da pagina, todod o codigo praticamente ficará dentro dele, é oq ficará visivel no site -->
+		<!-- as informações que vão vir seguema  aorde do seu wireframe-->
+		<div class="FaixaTopo"> <!-- criado para deixar a faica que o conteudo vai ficar dentr que n deve ficar centralizado em 1200-->
+			<div class="site contatoSocial"> <!-- Topo Contato --> <!-- classe site para tudo que tiver configurado no css para .sites valer para oque estiver dentro da caixa div-->
+
+				<h2> 
+					<!-- tag de titulo, so usada 1 vez por apgona, da titulo apra a pagina do site, h1 tem peso maior, é como se fosse o titulo da pagina, h2,h3,h4,h5,h6 são subtitulos e vai diminuindo a importância -->		
+					contato@kibeleza.com.br	</h2>
+
+
+				<ul> 
+					<li><a href="#"><img src="img/faceBranco.svg" alt="Icone Facebook"></a></li> <!-- colocamos as imagens dos logos como botão-->
+					<li><a href="#"><img src="img/InstaBranco.svg" alt="Icone Instagram"></a></li>
+					<li><a href="#"><img src="img/twitterBranco.svg" alt="Icone Twitter"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div id="topo-fixo">
+			
+			<div class="site logoMenu "><!--Topo Logo e Menu , id é tipo classe porém é unico -->
+				<h1> Logo KiBeleza </h1>
+
+				<!-- BOTÃO PARA ABRIR O MENU MOBILE -->
+				<button class="abrirMenu"> </button>
+
+				<nav>
+
+					<!-- BOTÃO PARA FECHAR O MENU MOBILE -->
+					<button class="fecharMenu"> </button>
+					<ul>
+						<li><a href="#">HOME</a></li> <!-- Criamos um link para ao clicar çevar para a pagina HOME -->
+						<li><a href="#">SOBRE</a></li>
+						<li><a href="#">SERVIÇO</a></li>
+						<li><a href="#">PROMOÇÕES</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">CONTATO</a></li>
+					</ul>	
+
+				</nav>				
+			</div>
+			
+		</div>
+			
+		
+	</header> <!-- fim topo-->
+	
+	
+	
+	<section class="banner"> <!-- seção para iniciar o banner-->
+		<img src="img/banner.png"	alt="Banner do Site Pagina Home">
+		<img src="img/banner.png"	alt="Banner do Site Pagina Home">
+		<img src="img/banner.png"	alt="Banner do Site Pagina Home">
+				
+	</section><!-- fim banner -->
+	
+	<section class="site tendencias fundosite"> <!-- seção tendencias -->
+		
+		<h2>TENDÊNCIAS</h2>	
+				
+		<article class="tendenciasBox">
+			
+			<article>
+				<img src="img/tendendia1.png" alt="Tendências">
+				<h3>Tendência 1</h3>
+				<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap ."</p>
+				<a href="#">Leia Mais</a> 
+			</article>
+			
+			<article>
+				<img src="img/tendendia2.png" alt="Tendências">
+				<h3>Tendência 2</h3>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
+				<a href="#">Leia Mais</a>
+			</article>
+			
+			<article>
+				<img src="img/tendendia3.png" alt="Tendências">
+				<h3>Tendências 3</h3>
+				<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."</p>
+				<a href="#">
+					Leia Mais
+				</a>
+			</article>			
+			
+		</article>
+		
+	</section> <!--final tendencias-->
+	
+	<div class="FundoSobre"> <!--deixa o fundo colorido ifual do topo-->
+	<section class="site sobre wow fadeIn"  > <!-- inicio seção sobre o salão-->
+		
+		<article>
+			<h2>Sobre o KiBeleza</h2>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+			<a href="#"> Saiba Mais</a>
+		</article>
+		
+		<article >
+			<img src="img/sobre.png" alt="Salão KiBeleza">
+			
+		</article>
+		
+	</section><!-- fim seção sobre o salão -->
+	</div>	
+	
+	<!-- CARROSEL INSTAGRAM -->
+	<section class="insta FaixaTopo">
+		
+		<!--imagens com resolução 150x150-->
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+		<img src="img/insta.png"  alt="imagem do Instagram">
+	
+	</section>
+	
+	<section class="blog site">
+		<article>
+			<img src="img/blog.png" alt="Blog">
+		</article>
+		
+		<article>
+			<img src="img/insta3.png" alt="Blog">
+		</article>
+		
+		<article>
+			<img src="img/blog2.png" alt="Blog">
+		</article>
+		
+		<article>
+			<img src="img/insta4.png" alt="Blog">
+		</article>
+	
+	
+	</section>
+	
+	
+	
+	
+	<!-- seção do rodapé -->
+	<footer class="rodape"> <!--footer tag semantica para rodapé-->
+		<nav>
+			<ul>
+				<li><a href="#"><img src="img/faceBranco.svg" alt="facebbok kibeleza"></a></li>
+				<li><a href="#"><img src="img/InstaBranco.svg" alt="instagram kibeleza"></a></li>
+				<li><a href="#"><img src="img/twitterBranco.svg" alt="twitter kibeleza"></a></li>
+				<li><a href="#"><img src="img/WhatsBranco.svg" alt="whatsapp kibeleza"></a></li>
+			</ul>
+		</nav>
+		
+		<img src="img/LogoKiBelezaBranco.svg" alt="logo Kibeleza">
+		
+		<p> 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+		
+		<div> 
+			<h2>
+			© Todos os direitos reservados - <a href="http://dycsel.com.br" target="_blank"> Dycsel </a>
+			</h2>  <!-- _blank abre uma nova aba, self abre na mesma pagina o link-->
+					<!-- © = alt + 0169-->
+		</div>
+		
+	
+	</footer>
+	
+	<!--JAVASCRIPT-->
+	
+	<!-- CARREGAR BIBLIOTECA-->
+	<script src="js/jquery-3.4.1.min.js"></script> <!--biblioteca de efeitos-->
+	
+	 <script src="js/wow.min.js"></script> <!-- VAI PORCURAR O ARQUIVO--> <!--animação que usa os recursos da biblioteca-->
+	<!--para o carrosel-->
+	<script type="text/javascript" src="js/slick.js"></script>
+	
+	
+	<script type="text/javascript" src="js/animacoes.js"></script>
+	<!-- VAI INICIALIZAR -->
+              <script> 
+					
+
+              </script>
+	
+	
+</body> <!--fim do corpo da página -->
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

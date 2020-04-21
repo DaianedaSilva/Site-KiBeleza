@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+.site{ /* centralizar o que estiver classificado como site*/
+	max-width: 1200px;   /* largura maxima da pagina vai ser 1200px*/ 
+	margin: 0 auto; /* 0 de margem no topo e no botom, e auto centralizado na esquerda e na direita*/
+	widht: 100%;  /* quando o site for menor ou igual a 1200px ele vai mostrar 100% na tela, vai ajustar certinho a tela */
+	 
+	}
+
+body{
+	margin: 0 ;		/*tirar espaçamentos que aparecem nos backgouds*/
+	font-size: 16px; /* tamanho do texto do corpo*/
+	color: #FFFFFF; /*cor do texto do corpo*/
+	background: url("../img/spikes.png");
+}
+
+header{
+	background: #76B4AB; /*cor de fundo do cabeçalho  */
+	
+}
+/************** TOPO *****************/
+
+.FaixaTopo{
+	background: #401230;
+	
+}
+.contatoSocial{
+	display: flex; /* criei para posicionar os itens que tiverem no contatoSocial*/
+	justify-content: space-between;
+}
+
+.contatoSocial ul{
+	display: flex; /* quebra a lista em linha, criou um flex ja para todos os li*/
+	
+}
+
+.contatoSocial ul li{
+	width: 30px;	/*largura para o svg aparecer*/
+	margin: 2px; /*cria espaçamento entre as li */
+	
+	list-style-type: none; /* tretira os marcadoers*/
+}
+/************ FIM TOPO **************/
+
+
+
+/************ MENU *****************/
+.logoMenu h1 { /*mexer com o logo, colocar imagem*/
+	background: url("../img/300x90.png") no-repeat; /* ''../" vc sai da pasta css,,, coloquei imagem */
+	/*o no repeat não se repete para preencher o espaço caso o espaço seja menor */
+	width: 300px;/*largura*/
+	height: 90px;/*altura*/
+	text-indent: -9999px;/*esconder o texto do html mas sem apagar, colocar o logo em cima dele, -999 coloca ele na ultima posição, para esconder logo o comando  é o zindex*/
+}
+
+
+.logoMenu{ /*cabeçalho da pagina home*/
+	display: flex;/* felx para atingir a nav e o h1 */
+	justify-content: space-between;
+}
+
+.logoMenu nav ul{ /*lista do cabeçalho (home,sobre, serviços...)*/
+	display: flex; /* flex que atinge a ul do nav */
+}
+
+.logoMenu nav ul li{ /*arrumar os itens da lista do jeito que quero*/
+	list-style-type: none;
+	padding: 20px 30px;
+	background: #AAAAAA;
+	margin: 2px;
+}
+	
+.logoMenu nav ul li:hover{ /*ao passar o mouse oq vai acontecer*/
+	background: #EF59E4; /*ao passar o mouse vai mudar a cor */
+}
+
+.logoMenu nav ul li a{
+	color:#d01417; /*cor do texto */
+	text-decoration: none;
+	text-transform: uppercase; /*deixar tudo em maiusculo*/
+	
+}
+/*************** FIM MENU **************/
+
+
+
+/*********** BANNER *******************/
+.banner img{ /* dentro da seção banner quero mexer apenas com a imagem*/
+	width: 100%; /* a img tem que ficar sempre 100% da tela, faz a imagem acompanhar o site, ficando sempre centralizado*/
+	}
+/*********** BANNER *******************/
+
+
+
+/************ TENDÊNCIAS **************/
+.tendencias{
+	text-align: center;  /*centralizar tudo que estiver nessa seção*/
+}
+
+.tendencias p{
+	text-align: center;
+	background: #76B4AB;
+	justify-content: space-between;
+	margin: 1%;
+}
+.tendenciasBox{
+	display:flex; /*quebrei as articles para se quebrarem para eu ajustas p posicionamento*/
+	justify-content: space-between; /* coloquei espaçamento igual entre eles*/
+}
+
+/********* FIM  TENDÊNCIAS ***********/
+
+
+/********* SOBRE O KIBELEZA **********/
+
+.sobre{ /* quebrei as estrutura para modificar o local dos filhos*/
+	display: flex;	
+}
+
+.sobre article h2{
+	text-align: center; /* centralizei apenas o que esta em h2*/
+}
+
+
+.sobreImg {
+	margin: 2% 80px 0 5px;
+}
+
+.sobreText {
+	margin: 70px 20px 50px 80px;
+	background: #AAAAAA;
+
+}
+
+.sobreText p{ /*centralizar o texto */
+	padding: 40px 20px; /* aumentei o tamanho da caixa , ele fica centralizado no meio dele*/
+}
+
+
+
+
+
+
+
+
+
+
+
+

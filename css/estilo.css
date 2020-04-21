@@ -1,0 +1,681 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/**** FONTES ***/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Quicksand|Raleway&display=swap');
+
+
+/*
+font-family: 'Raleway', sans-serif; 
+font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+
+/************************/
+
+
+.fundosite{
+	background: #FFFFFF;
+}
+.site{ /* centralizar o que estiver classificado como site*/
+	max-width: 1200px;   /* largura maxima da pagina vai ser 1200px*/ 
+	margin: 0 auto; /* 0 de margem no topo e no botom, e auto centralizado na esquerda e na direita*/
+	widht: 100%;  /* quando o site for menor ou igual a 1200px ele vai mostrar 100% na tela, vai ajustar certinho a tela */
+}
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	margin: 0 ;		/*tirar espaçamentos que aparecem nos backgouds*/
+	font-size: 16px; /* tamanho do texto do corpo*/
+	color: #FFFFFF; /*cor do texto do corpo*/
+}
+
+
+/************** TOPO *****************/
+
+.FaixaTopo{
+	background: #401230;
+}
+
+.contatoSocial{
+	display: flex; /* criei para posicionar os itens que tiverem no contatoSocial*/
+	justify-content: space-between;
+	padding: .3% 0;
+    align-items: center;
+}
+
+.contatoSocial ul{
+	display: flex; /* quebra a lista em linha, criou um flex ja para todos os li*/
+	
+}
+
+.contatoSocial ul li{
+	width: 30px;	/*tamanho do icone do insta,face e twiiter*/
+	margin: 2px 10px; /*cria espaçamento entre as li */
+	list-style-type: none; /* tretira os marcadoers*/
+}
+/************ FIM TOPO **************/
+
+
+
+/************ MENU *****************/
+.logoMenu h1 { /*mexer com o logo, colocar imagem*/
+	background: url("../img/LogoKiBeleza.svg") no-repeat; /* ''../" vc sai da pasta css,,, coloquei imagem */
+	/*o no repeat não se repete para preencher o espaço caso o espaço seja menor */
+	margin: 0; /*tirar a margem que deixa a faixa maior */
+	width: 300px;/*largura*/
+	height: 90px;/*altura*/
+	text-indent: -9999px;/*esconder o texto do html mas sem apagar, colocar o logo em cima dele, -999 coloca ele na ultima posição, para esconder logo o comando  é o zindex*/
+}
+
+
+.logoMenu{ /*cabeçalho da pagina home*/
+	display: flex;/* felx para atingir a nav e o h1 */
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoMenu nav ul{ /*lista do cabeçalho (home,sobre, serviços...)*/
+	display: flex; /* flex que atinge a ul do nav */
+}
+
+.logoMenu nav ul li{ /*arrumar os itens da lista do jeito que quero*/
+	list-style-type: none;
+	padding: 20px 30px;
+	margin: 2px;
+}
+
+
+.logoMenu nav ul li a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold; /*espessura da linha, tipo negrito*/
+	color:#401230; /*cor do texto */
+	text-decoration: none; /*tira sublinahdo*/
+	text-transform: uppercase; /*deixar tudo em maiusculo*/
+	
+}
+/*************** FIM MENU **************/
+
+
+/********* MENU FIXO *******************/
+/*criamos uma classe fixa no top na frente de todos na largura 100% (pegando a pagina toda)*/
+
+/*quando a condição do java Script (window.onscroll = function()) for atendida ele passa a acrescer o menu-fixo na div q tem o id=topo-fixo*/
+.menu-fixo {
+	position: fixed; 
+	top: 0;
+	z-index: 9999;
+	
+	width: 100%;
+	background: rgba(91,36,72,0.77);
+	
+	/*animação quando ele aparecer*/
+	animation: fadeIn 1s ease-in-out;
+	
+}
+
+.menu-fixo 
+.logoMenu h1 { /*mexer com o logo, colocar imagem*/
+	background: url("../img/LogoKiBelezaBranco.svg") no-repeat; /* ''../" vc sai da pasta css,,, coloquei imagem */
+	/*o no repeat não se repete para preencher o espaço caso o espaço seja menor */
+	
+}
+
+.menu-fixo
+.logoMenu nav ul li a{
+	color: #FFFFFF;
+}
+
+/*********** BANNER *******************/
+.banner img{ /* dentro da seção banner quero mexer apenas com a imagem*/
+	width: 100%; /* a img tem que ficar sempre 100% da tela, faz a imagem acompanhar o site, ficando sempre centralizado*/
+	}
+/*********** FIM BANNER *******************/
+
+
+
+/************ TENDÊNCIAS **************/
+.tendencias{
+	text-align: center;  /*centralizar tudo que estiver nessa seção*/
+	padding: 2% 0; /*margem entre o banner e o depois da tendencia, usamos o padding para ele n sair do alinhamento central q colocamos*/
+}
+
+.tendencias p{
+	text-align: center;
+	justify-content: space-between;
+	margin: 1%;
+}
+
+.tendencias h2{
+	color: #401230;
+	font-size: 1.5em; /* ja decidimos no body que a fonte é 16px, entçao iremos fazer 1.5*16=24, se colocassemos em 2em, ia ser 2*16=32em. Assim é so mudar um item para mudar tudo, no caso la no body*/
+	border-bottom: thin #401230 solid; /*bordar para fazer a linha do tendência (thin(espessura) cor solido*/
+	width: 300px; /*tamanho da linha do tendência*/
+	margin: 0 auto; /*forçar que a linha centralize com o texto*/
+	
+}
+
+.tendenciasBox{
+	display:flex; /*quebrei as articles para se quebrarem para eu ajustas p posicionamento*/
+	justify-content: space-between; /* coloquei espaçamento igual entre eles*/
+	padding: 2% 0; /* para n ficr grudado no tendencia*/
+}
+
+.tendenciasBox article {
+	width: 30%;	/* espaçamenteo entre as tendencias está igual, nesse caso 30%*/
+	display: flex; /*para o link ficar alinahdo*/
+	flex-direction: column; /*para o link ficar alinahdo*/
+	justify-content: space-between; /*para o link ficar alinahdo*/
+	
+}
+.tendencias article img {
+	border: thin #401230 solid; /*borda nas imagens*/
+	border-radius: 5px 0 5px 0 ; /* borda arredondada*/
+	width: 100%; /*para a imagem ficar responsiva, aumenta e diminui ocnforme a tela*/
+}
+.tendencias article h3 {
+	color: #401230;
+	text-align: center; /*alinhamento do texto*/
+	text-transform: uppercase; /*texto em maiusculo*/
+	font-weight: 600; /*em negrito*/
+	padding: 3% 0 5% 0;
+}
+
+.tendencias article p{
+	text-align: justify;
+	color: #333333;
+	font-size: 1em; /*tamanho do texto*/
+	line-height: 1.5em; /*espaçamento entre linhas*/
+	padding: 3% 0 5%;
+	
+	
+}
+
+.tendencias article a {
+	text-decoration: none; /*tira o sublinahdo do texto*/
+	padding: 2% 5%; /*caixa para o texto*/
+	background: #8c375f;
+	border: thin #d9b1a3 solid;
+	color: #ffffff;
+	width: 30%; /*diminui o tamnho da caixa*/
+	align-self: flex-end; /*coloca no fim da pagiona*/
+	/*float: right; /*pega um conteudo e flutua na tela para um posição que queira, esta flutuando a direita, se tiver a esquerda o conteudo a bauixo sobe, então é bom usar so para a direira*/
+}
+
+.tendencias article a:hover { /*ao passar o mouse vai mudar a cor */	
+	
+	background: #d9b1a3;
+	border: thin #8c375f solid;
+	color: #8c375f;
+	
+}
+/********* FIM  TENDÊNCIAS ***********/
+
+
+/********* SOBRE O KIBELEZA **********/
+.FundoSobre{ /*cor de fundo*/
+	background: #eee4ee;
+}
+.sobre{ /* quebrei as estrutura para modificar o local dos filhos*/
+	display: flex;	
+	justify-content: space-around;
+	padding: 2% 0;
+}
+
+.sobre article h2{
+	text-align: center; /* centralizei apenas o que esta em h2*/
+	color: #401230;
+	text-align: center; /*alinhamento do texto*/
+	text-transform: uppercase; /*texto em maiusculo*/
+	font-weight: bold; /*em negrito*/
+	font-size: 2em;
+}
+
+
+.sobre img {
+	margin: 2% 80px 0 5px;
+}
+
+.sobre h2 {
+	margin: 70px 20px 50px 80px;
+	
+
+}
+
+.sobre  p{ /*centralizar o texto */
+	padding: 40px 20px; /* aumentei o tamanho da caixa , ele fica centralizado no meio dele*/
+	color: #333333;
+	text-align: justify;
+	font-size: 1em; /*tamanho do texto*/
+	line-height: 1.5em; /*espaçamento entre linhas*/
+	
+}
+
+.sobre a {
+	text-decoration: none; /*tira o sublinahdo do texto*/
+	padding: 2% 5%; /*caixa para o texto*/
+	background: #8c375f;
+	border: thin #d9b1a3 solid;
+	color: #ffffff;
+	width: 30%; /*diminui o tamnho da caixa*/
+	align-self: flex-start;
+	
+}
+
+/********* FIM SOBRE O KIBELEZA ********/
+
+
+/********** CARROSEL INSTAGRAM ********/
+
+.insta{
+	margin: 2% 0;
+	overflow:hidden; 
+	/* diz como o espaço do obejto deve se comportar, auto fica do jeito que está, cai para baixa se atingir o espaço, hidden adapata ao espaço que tem mostra apaenas oq esta no espaço, scrool cria uma barra de rolagem mas mantme o espaço*/
+	display:flex; /*força a ficar na linha, so o display flex deixa tudo na mesma linha prorém ele cria uma barra de roalgem no fim da pagina*/
+}
+
+.insta img{
+	padding: 1.5%
+}
+
+/************ BLOG **************/
+.blog {
+	display: flex;
+	justify-content: space-around;
+}
+
+/*********** RODAPÉ **********/
+
+.rodape{
+	background: url("../img/rodape.png");
+	background-size: cover; /*a imagem sempre se adapta ao espaço que ele tem , nesse caso o tamanho do footer*/
+	text-align: center; /* funciona com todos os elemntos e n so texto*/
+}
+
+.rodape ul{	
+	padding: 0; /*tirar uma padding que o navegador criou*/
+		
+	}
+.rodape ul li{
+	 width: 50px; /*largura para diminui espaçamento entre as li*/
+	margin-top: 1%;
+	list-style-type: none; 	
+	display:inline-block;/*fica em linha e faz um bloco*/
+	
+}
+
+.rodape ul li a img{ /*icones redes*/
+	width: 60%;
+	
+}
+
+
+.rodape img { /****logo */
+	width: 25%;
+	
+}
+
+.rodape p{
+	padding: 1.5% 0;  /*aumemtar o tamnho, como estamos usando o width nos usamos o marign para mostrar a posição então n pode usar margim*/
+	width: 30%; /*largura até onde o texto fica*/
+	margin: 0 auto; /*usar margim toda vez que quer centralizar algo que tem uma largura. O auto sempre divide metademetade para o lado*/
+	font-size: .8em;
+}
+
+
+.rodape div{ 
+	background: rgba(0,0,0,0.8) ;
+}
+.rodape div h2 {
+	padding: 2% 0;
+	font-size: .8em;
+}
+
+.rodape div a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.rodape div a:hover{
+	color: #7a596e;
+
+}
+
+
+/*** PAGINA CONTATO ***/
+
+ /*formulário***/
+
+	.form article{
+
+		
+		width: 48%;	
+	}
+
+	.form article img {
+		width: 100%;
+	}
+
+	.form {
+		margin: 2% auto;
+		display: flex;
+		justify-content: space-around;
+		
+	}
+
+	.form h2 {
+		color: #5B2448;
+		font-size: 2em;
+		padding-bottom: 5%;
+	}
+
+.form form input[type=text],
+.form form input[type=email],
+.form form input[type=tel],
+.form form input[type=submit],
+.form form textarea{	
+	width: 95%;
+	padding: 0.5em;
+	color: #FFFFFF;
+	background:rgba(91,36,72,1.00);
+	border: thin solid #FFFFFF;
+	font-size: 1.0em;
+	margin-bottom: 0.3em;
+	
+}
+
+.form form textarea{
+	height: 150px;
+	resize: none; /*não pode reajustar o tamanho */
+}
+
+
+.form form input[type=submit]{
+	width: 30%;
+	float: right;
+	margin-right: 11px;
+	cursor: pointer; /* deixar uma mãozinha ao passar por cima*/
+	background: rgba(91,36,72,0.77);
+	border: medium solid #5B2448;
+}
+
+.form form input[type=submit]:hover{
+	background:#5B2448;
+	border: medium solid ;
+}
+
+
+.form span {
+	color:rgba(91,36,72,1.00); 
+}
+
+
+
+/********* INICIO RESPONSIVO,a cima ja esta de 0 a 1200 ********/
+
+/***** o que quer que se comporte diferente vai mudar, se não fica igual e não tem mudanças ******/
+
+/*************** 0 - 760 ****************/
+
+@media (max-width:760px){
+	.logoMenu{
+		flex-direction: column; /*deixa o logo acima do menu*/
+	}
+	
+	
+	.logoMenu nav ul li {
+
+		margin: 0;
+	}
+
+	.contatoSocial h2 { /*arrumar o contato@kibeleza.com.br*/
+		margin-left: 2%;
+		font-size: 1em;
+	}
+	
+	
+	
+	.tendenciasBox {
+        padding: 3% 4px;
+	}
+	
+	
+	
+	.sobre {
+    	flex-direction: column;
+		
+	}
+	
+	.sobre article img {
+		width: 100%;
+		margin: 0;
+		
+	}
+	.sobre article{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4%;
+	}
+	
+	.sobre article h2{
+		margin-left: 5%;
+		padding:0;
+		margin: 0;
+	}
+	
+	.sobre p {
+    	font-size: 1em;
+   	 	padding: 10%;
+	}
+	
+	.sobre a {
+		text-decoration: none;
+		padding: 2% 5%;		
+		border: thin #d9b1a3 solid;
+		color: #ffffff;
+		width: 30%;
+		
+	}
+	
+	
+	
+	.blog article {
+		padding: 2%;
+		
+	}
+	.blog article img {
+		width: 80%;
+		
+	}
+	
+}
+
+
+/********* resoluções maximas a 480 ******/
+@media not all and (max-width:500px) { /* n deve abrir em todas a resoluções onde a largura maxima seja maior que 480px*/
+	
+	.fecharMenu,         /*escondendo os botões para o mobile*/ /*com virgula são duas classes diferentes*/
+	.abrirMenu {
+		display: none;
+		
+	}
+	
+}
+
+
+/*************** 0 - 480 ****************/
+
+/* deinindo a largura maximo para 480*/
+@media (max-width:500px){
+	.banner{
+		display: none; /*não mostra o banner até 480*/
+	}
+	
+	.logoMenu{
+		flex-direction: row; /*ficar em linha*/
+	}
+	
+	.logoMenu nav{ /*mudando o formato do menu*/
+		height: 100%;	
+		background: rgba(91,36,72,0.77);
+		max-width: 320px;
+		width: 50%; /*caso a tela tenha uma largura menor que 320, vai ser sempre 50%*/
+		position: fixed; /* fixo nas ´posições que defini, top:0 height 100%, max-width:320, right:-50...*/
+		z-index: 9999; /*fina frante de todo mundo*/
+		top:0;
+		right: -250px;
+		
+		
+		/*tarnsição apra antes de ser 0*/
+		transition: right 0.5s ease-out; /* ani,ação apra direira que dura 0.5s e é a ease-out (começa rapido termina lenta)*/
+		
+	}
+	
+	.menuAtivo   /*sem virgula é uma extensção o logomenu so vai se rchamdo atravez  do menuativo*/
+	.logoMenu nav{
+		right: 0;		
+		padding: 20px 20 20 20
+		
+	}
+	
+	.abrirMenu { /*colocar imagem no botão*/
+		background: url("../img/menu.svg");
+		padding: 20px;
+		display: block; /* n pega a imagem so, é o padding todo, sem ele precisaria clicar so na parte com imagem do backgroud */
+		border: 0;	
+		margin-right: 6%;
+		
+	}
+	
+	.logoMenu nav ul {
+		flex-direction: column; /*colocar em linha*/
+		align-items: flex-start;
+		margin-top: 50px;
+		
+	}
+	.logoMenu nav ul li a{
+		color: #FFFFFF;
+	}
+	
+	.fecharMenu {
+		background: url("../img/fecharMenu.svg");
+		padding: 20px;
+		display: block;
+		border:0;
+		align-items: flex-end;
+	}
+	
+	
+	
+	
+	
+	.insta {
+		display: none; /*esconder o carrosel do instagram*/
+	}
+	
+	.contatoSocial h2 { /*arrumar o contato@kibeleza.com.br*/
+		margin-left: 2%;
+		font-size: 1em;
+	}
+	
+	.tendencias h2 {
+    	padding-top: 5%; /*descolar do logo*/    
+	}
+	
+	.tendenciasBox {	
+		flex-direction:column; /*deixar a tendencia um de baixo do outro*/
+	}
+	
+	.tendenciasBox article {
+		width: 100%;
+		margin-bottom: 5%;
+				
+	}
+	
+	.tendencias article h3 {
+		padding: 3% 0 5% 5%;
+		font-size: 2em;
+	}
+	
+	.tendencias article p {
+		font-size: 1em;
+		line-height: 1.5em;
+		padding: 3% 5% 5% 5%;
+	}	
+	
+	
+	.tendencias article img {
+    border: none;
+}
+	.sobre {
+    flex-direction: column;
+	}
+	
+	.sobre img {
+		width: 100%;
+		text-align: center;
+	}
+	.sobre article{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4%;
+	}
+	
+	.sobre article h2{
+		margin-left: 5%;
+		padding:0;
+		margin: 0;
+	}
+	
+	.sobre p {
+    	font-size: 1em;
+   	 	padding: 10%;
+	}
+	
+	.sobre a {
+		text-decoration: none;
+		padding: 2% 5%;		
+		border: thin #d9b1a3 solid;
+		color: #ffffff;
+		width: 30%;
+		
+	}
+	
+	.blog {
+		flex-direction: column;
+	}
+	
+	.blog article {
+		padding: 5%;
+		background: #401230;
+	}
+	.blog article img {
+		width: 100%;
+		
+	}
+	
+	.rodape img {
+		width:50%;
+	}
+	
+	.rodape p {
+		width: 80%;
+	}
+	
+	.rodape ul {
+		padding: 5%;
+	}
+	
+	.rodape ul li {
+		width: 40px;
+	}
+	
+}
+
+
+
+
+
